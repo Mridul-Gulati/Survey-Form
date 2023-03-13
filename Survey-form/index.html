@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img src="./Images/Coffee.jpg" style="top: -110px" />
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+
+    <form>
+      <fieldset>
+        <label id="name-label" for="name">
+          Name
+          <input type="text" id="name" placeholder="Enter your Name" required
+        /></label>
+        <label id="email-label" for="email">
+          Email
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your Email"
+            required
+        /></label>
+        <label id="number-label" for="number">
+          Age(optional)
+          <input type="number" id="number" placeholder="Age" min="13" max="120"
+        /></label>
+        <label for="dropdown">
+          Which option best describes your current role?
+          <select id="dropdown" class="block">
+            <option>Student</option>
+            <option>Full time</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        Would you recommend freeCodeCamp to a friend?
+        <label for="definitely"
+          ><input id="definitely" type="radio" name="rec"/ class="inline">
+          Definitely</label
+        >
+        <label for="maybe"
+          ><input id="maybe" type="radio" name="rec"/ class="inline">
+          Maybe</label
+        >
+        <label for="no"
+          ><input id="no" type="radio" name="rec"/ class="inline"> No</label
+        >
+      </fieldset>
+      <fieldset>
+        What would you like to see improved? (Check all that apply)
+        <label for="back-end">
+          <input type="checkbox" id="back-end" value="1" class="inline" />
+          Back-end Projects
+        </label>
+        <label for="data-visualisation">
+          <input
+            type="checkbox"
+            id="data-visualisation"
+            value="2"
+            class="inline"
+          />
+          Data Visualization
+        </label>
+        <label for="challenges">
+          <input type="checkbox" id="challenges" value="3" class="inline" />
+          Challenges
+        </label>
+        <label for="forum">
+          <input type="checkbox" id="forum" value="4" class="inline" /> Forum
+        </label>
+        <label id="nothing">
+          <input type="checkbox" id="nothing" value="5" class="inline" />
+          Nothing
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="suggestions"
+          >Any Suggestions?
+          <textarea
+            id="suggestions"
+            name="suggestions"
+            rows="5"
+            cols="35"
+            placeholder="Enter your comment here"
+          ></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
